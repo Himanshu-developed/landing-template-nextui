@@ -64,7 +64,7 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  Uncover hidden potential. Celebrate every milestone. We're your partner in thriving.              
+                  Uncover hidden potential. Celebrate every milestone. We&apos;re your partner in thriving.              
                 </Text>
 
                <Flex
