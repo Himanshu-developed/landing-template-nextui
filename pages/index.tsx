@@ -11,7 +11,7 @@ import {Testimonials} from '../components/tesminonials';
 import {Statistics} from '../components/statistics';
 import {Plans} from '../components/plans';
 import {Faq} from '../components/faq';
-import {Trial} from '../components/trial';
+import {Promotions} from '../components/trial';
 import {Footer} from '../components/footer';
 
 const Home: NextPage = () => {
@@ -26,9 +26,7 @@ const Home: NextPage = () => {
             <Features3 />
             <Testimonials />
             <Statistics />
-            <Plans />
-            <Faq />
-            <Trial />
+            <Promotions />
             <Footer />
          </Box>
       </Layout>

@@ -11,11 +11,9 @@ export const Nav = () => {
    const {setTheme} = useNextTheme();
    const {isDark, type} = useTheme();
    const collapseItems = [
-      'Features',
-      'Customers',
-      'Pricing',
-      'Company',
-      'Legal',
+      'Services',
+      'About',
+      'Testinomials',
    ];
    return (
       <Navbar
@@ -32,7 +30,7 @@ export const Nav = () => {
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
-               Aveleon
+               Elevon
             </Text>
             <Navbar.Content
                hideIn="sm"
@@ -40,7 +38,7 @@ export const Nav = () => {
                   pl: '6rem',
                }}
             >
-               <Dropdown isBordered>
+               {/* <Dropdown isBordered>
                   <Navbar.Item>
                      <Dropdown.Button
                         auto
@@ -115,12 +113,12 @@ export const Nav = () => {
                         +Supreme Support
                      </Dropdown.Item>
                   </Dropdown.Menu>
-               </Dropdown>
+               </Dropdown> */}
                <Navbar.Link isActive href="#">
-                  Customers
+                  Services
                </Navbar.Link>
-               <Navbar.Link href="#">Pricing</Navbar.Link>
-               <Navbar.Link href="#">Company</Navbar.Link>
+               <Navbar.Link href="#">About</Navbar.Link>
+               <Navbar.Link href="#">Testinomials</Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
 
@@ -138,18 +136,7 @@ export const Nav = () => {
                   </Link>
                </Navbar.CollapseItem>
             ))}
-            <Navbar.CollapseItem>
-               <Link
-                  color="inherit"
-                  css={{
-                     minWidth: '100%',
-                  }}
-                  target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
-               >
-                  <GithubIcon />
-               </Link>
-            </Navbar.CollapseItem>
+
             <Navbar.CollapseItem>
                <Switch
                   checked={isDark}
@@ -160,14 +147,14 @@ export const Nav = () => {
             </Navbar.CollapseItem>
          </Navbar.Collapse>
          <Navbar.Content>
-            <ModalLogin />
-
             <Navbar.Item>
-               <Button auto flat href="#">
-                  Start free trial
+               <Link href="https://ydtfie02mut.typeform.com/to/WOF3Xwdx">
+               <Button auto flat>
+                  Contact to Sales
                </Button>
+               </Link>
             </Navbar.Item>
-            <Navbar.Item hideIn={'xs'}>
+            {/* <Navbar.Item hideIn={'xs'}>
                <Link
                   color="inherit"
                   css={{
@@ -178,7 +165,7 @@ export const Nav = () => {
                >
                   <GithubIcon />
                </Link>
-            </Navbar.Item>
+            </Navbar.Item> */}
             <Navbar.Item hideIn={'xs'}>
                <Switch
                   checked={isDark}

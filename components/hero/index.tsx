@@ -1,8 +1,8 @@
-import {Button, Divider, Input, Text} from '@nextui-org/react';
+import { Button, Divider, Input, Link, Text } from '@nextui-org/react';
 import React from 'react';
-import {CheckIcon} from '../icons/CheckIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { CheckIcon } from '../icons/CheckIcon';
+import { Box } from '../styles/box';
+import { Flex } from '../styles/flex';
 
 export const Hero = () => {
    return (
@@ -43,15 +43,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     The modern landing page{' '}
-                  </Text>
-                  <Text
-                     h1
-                     css={{
-                        display: 'inline',
-                     }}
-                  >
-                     for{' '}
+                     Elevate Your{' '}
                   </Text>
                   <Text
                      h1
@@ -60,7 +52,7 @@ export const Hero = () => {
                      }}
                      color="primary"
                   >
-                     React developers
+                     Growth
                   </Text>
                </Box>
 
@@ -72,9 +64,8 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest way to build React Landing page in seconds. Save
-                  time and focus on your project.
-               </Text>
+                  Uncover hidden potential. Celebrate every milestone. We're your partner in thriving.              
+                </Text>
 
                <Flex
                   css={{
@@ -83,10 +74,11 @@ export const Hero = () => {
                   }}
                   wrap={'wrap'}
                >
-                  <Input placeholder="Enter your email address" size="lg" />
-                  <Button>Start Free Trial</Button>
+                  <Link href="https://ydtfie02mut.typeform.com/to/WOF3Xwdx">
+                  <Button>Contact to Sales</Button>
+                  </Link>
                </Flex>
-               <Flex
+               {/* <Flex
                   wrap={'wrap'}
                   css={{
                      'gap': '$8',
@@ -120,21 +112,22 @@ export const Hero = () => {
                   >
                      <CheckIcon /> Cancel anytime.
                   </Flex>
-               </Flex>
+               </Flex> */}
             </Box>
             <Box
                css={{
                   '& img': {
                      width: '775px',
+                     height:'500px',
                      objectFit: 'contain',
                   },
                }}
             >
-               <img src="mock.png" />
-            </Box>
+<img src="Group.svg" />
+</Box>
          </Flex>
          <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$10'}}
+            css={{ position: 'absolute', inset: '0p', left: '0', mt: '$10' }}
          />
       </>
    );
